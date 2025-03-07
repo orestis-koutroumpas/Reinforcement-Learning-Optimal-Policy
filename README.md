@@ -16,13 +16,13 @@ Where 𝑊𝑡∼𝑁(0,1).
 At each new state, a reward 𝑅(𝒮)=𝑚𝑖𝑛{2,𝒮^2} is received. The goal is to solve for the optimal action policy that maximizes the expected reward.
 
 The problem is defined as:
-```𝜈𝑗(𝑋)=𝔼_𝑆𝑡+1^𝑗[ℛ(𝑆𝑡+1)|𝑆𝑡=𝑋],𝑗=1,2```
+𝜈𝑗(𝑋)=𝔼𝑆𝑡+1𝑗[ℛ(𝑆𝑡+1)|𝑆𝑡=𝑋],𝑗=1,2
 
 The optimal action policy is:
 
 𝑎𝑡=𝑎𝑟𝑔𝑚𝑎𝑥 {𝜈1(𝑆𝑡),𝜈2(𝑆𝑡)}
 
-That is, at time 𝑡, choose 𝑎𝑡=1 if \𝜈1(𝑆𝑡)>𝜈2(𝑆𝑡), otherwise choose 𝑎𝑡=2.
+That is, at time 𝑡, choose 𝑎𝑡=1 if 𝜈1(𝑆𝑡)>𝜈2(𝑆𝑡), otherwise choose 𝑎𝑡=2.
 
 ## Methodology
 
@@ -46,7 +46,7 @@ The matrices ℱ𝑗, for j = 1, 2 are calculated based on the difference in tra
 
 The data-driven approach uses neural networks to approximate 𝑢(𝑋,𝜃𝜊𝑗). The networks are trained to approximate the expected rewards for each state. The cost function for the neural network is:
 
-𝐽̂(𝜃𝑗)=1𝑛𝑗Σ{𝜑(𝑢(𝑋𝑖𝑗,𝜃𝑗))+ℛ(𝑌𝑖𝑗)𝜓(𝑢(𝑋𝑖𝑗,𝜃𝑗))}
+𝐽̂(𝜃𝑗)=(1/𝑛𝑗) Σ{𝜑(𝑢(𝑋𝑖𝑗,𝜃𝑗))+ℛ(𝑌𝑖𝑗)𝜓(𝑢(𝑋𝑖𝑗,𝜃𝑗))}
 
 where 𝑢(𝑋𝑖𝑗,𝜃𝑗) is the neural network approximation.
 
@@ -91,6 +91,6 @@ To clone the repository:
 ### Dependencies
 
 - Python 3.x
-- TensorFlow
 - NumPy
 - Matplotlib
+- Scipy
