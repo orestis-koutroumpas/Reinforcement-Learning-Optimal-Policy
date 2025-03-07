@@ -7,16 +7,17 @@ This repository implements the numerical and data-driven approaches to solve the
 
 The problem involves a Markov decision process with two possible transition densities depending on the action 𝑎:
 
-- For 𝑎𝑡=1: 𝒮𝑡+1=0.8𝒮𝑡+1.0+𝑊𝑡
+- For 𝑎𝑡=1: 𝒮𝑡+1=0.8𝒮𝑡+1.0 + 𝑊𝑡
 
-- For 𝑎𝑡=2: 𝒮𝑡+1=−2.0+𝑊𝑡
+- For 𝑎𝑡=2: 𝒮𝑡+1=−2.0 + 𝑊𝑡
    
 Where 𝑊𝑡∼𝑁(0,1).
 
-At each new state, a reward 𝑅(𝒮)=𝑚𝑖𝑛{2,𝒮^2} is received. The goal is to solve for the optimal action policy that maximizes the expected reward.
+At each new state, a reward 𝑅(𝒮) = 𝑚𝑖𝑛{2,𝒮^2} is received. The goal is to solve for the optimal action policy that maximizes the expected reward.
 
 The problem is defined as:
-𝜈𝑗(𝑋)=𝔼𝑆𝑡+1𝑗[ℛ(𝑆𝑡+1)|𝑆𝑡=𝑋],𝑗=1,2
+
+𝜈𝑗(𝑋) = 𝔼_𝑆𝑡+1^𝑗[ℛ(𝑆𝑡+1) | 𝑆𝑡=𝑋], 𝑗=1,2
 
 The optimal action policy is:
 
