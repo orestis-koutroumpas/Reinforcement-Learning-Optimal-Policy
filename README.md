@@ -97,7 +97,7 @@ The following plots shows the learning curve for 𝜈1(𝑆) with [A1] and [C1].
 
 #### 3. Learning curve of 𝑢(𝑋,𝜃2) using [A1] and using [C1]
 
-Similarly, the following plot shows the learning curve for 𝜈2(𝑆), computed using the numerical method and the data-driven approach with [A1] and [C1].
+Similarly, the following plot shows the learning curve for 𝜈2(𝑆), with [A1] and [C1].
 
    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
       <img src="screenshots/curve2_A1.png" alt="Learning Curve A1" width="45%" />
@@ -108,21 +108,23 @@ Similarly, the following plot shows the learning curve for 𝜈2(𝑆), computed
 
 The following plots show the approximations for 𝜈1(𝑆) and 𝜈2(𝑆) obtained from both the numerical method and the neural network (NN) approximation.
 
-- 𝜈1(𝑆) Approximations
+- Approximations of 𝜈1(𝑆) 
 
    <div style="text-align: center;">
       <img src="screenshots/v1.png" alt="Approximation for V1(X)" width="90%" />
    </div>
 
-- 𝜈2(𝑆) Approximations
+- Approximations of 𝜈2(𝑆) 
 
    <div style="text-align: center;">
       <img src="screenshots/v2.png" alt="Approximation for V2(X)" width="90%" />
    </div>
 
+The black curve represents the numerical solution, while the blue and red curves represent the neural network approximations using [A1] and [C1], respectively.
+
 #### 5. Comparison of Numerical and Neural Network Approximations of 𝜈1(𝑆) and 𝜈2(𝑆)
 
-This graph shows the comparison between the numerical solutions and the neural network approximations for both 𝜈1(𝑆) and 𝜈2(𝑆). The black curve represents the numerical solution, while the blue and red curves represent the neural network approximations using [A1] and [C1], respectively.
+This graph shows the comparison between the numerical solutions and the neural network approximations for both 𝜈1(𝑆) and 𝜈2(𝑆). 
 
    <div style="text-align: center;">
       <img src="screenshots/both.png" alt="Approximation for both" width="90%" />
