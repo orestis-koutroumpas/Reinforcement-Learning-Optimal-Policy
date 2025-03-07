@@ -78,6 +78,64 @@ The neural networks used are of a single hidden layer with 100 neurons and ReLU 
 
 The results demonstrate that the neural network approximations converge well to the numerical solution, with the optimal policy derived from the comparison of 𝜈1(𝑆𝑡) and 𝜈2(𝑆𝑡).
 
+### Results
+
+#### 1. Reward Function
+The reward function used in the problem is 𝑅(𝒮)=𝑚𝑖𝑛{2,𝒮^2}. Below is a visualization of the reward function across the state space.
+
+   <div style="text-align: center;">
+      <img src="screenshots/reward.png" alt="Reward" width="90%" />
+   </div>
+
+#### 2. Learning curve of 𝑢(𝑋,𝜃1) using [A1] and [C1]
+
+The following plots shows the learning curve for 𝜈1(𝑆), computed using the numerical method and the data-driven approach with [A1] and [C1].
+
+   <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+      <img src="screenshots/curve1_A1.png" alt="Learning Curve A1" width="45%" />
+      <img src="screenshots/curve1_C1.png" alt="Learning Curve C2" width="45%" />
+   </div>
+
+#### 3. Learning curve of 𝑢(𝑋,𝜃2) using [A1] and using [C1]
+
+Similarly, the following plot shows the learning curve for 𝜈2(𝑆), computed using the numerical method and the data-driven approach with [A1] and [C1].
+
+   <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+      <img src="screenshots/curve2_A1.png" alt="Learning Curve A1" width="45%" />
+      <img src="screenshots/curve2_C1.png" alt="Learning Curve C1" width="45%" />
+   </div>
+
+#### 4. Approximations of 𝜈1(𝑆) and 𝜈2(𝑆)
+
+The following plots show the approximations for 𝜈1(𝑆) and 𝜈2(𝑆) obtained from both the numerical method and the neural network (NN) approximation.
+
+- 𝜈1(𝑆) Approximations
+
+   <div style="text-align: center;">
+      <img src="screenshots/v1.png" alt="Approximation for V1(X)" width="90%" />
+   </div>
+
+- 𝜈2(𝑆) Approximations
+
+   <div style="text-align: center;">
+      <img src="screenshots/v2.png" alt="Approximation for V2(X)" width="90%" />
+   </div>
+
+#### 5. Comparison of Numerical and Neural Network Approximations of 𝜈1(𝑆) and 𝜈2(𝑆)
+
+This graph shows the comparison between the numerical solutions and the neural network approximations for both 𝜈1(𝑆) and 𝜈2(𝑆). The black curve represents the numerical solution, while the blue and red curves represent the neural network approximations using [A1] and [C1], respectively.
+
+   <div style="text-align: center;">
+      <img src="screenshots/both.png" alt="Approximation for both" width="90%" />
+   </div>
+
+#### 6. Optimal Action Policy
+
+Finally, the optimal action policy based on the values of 𝜈1(𝑆) and 𝜈2(𝑆) is shown below.  The policy chooses 𝑎𝑡=1 if 𝜈1(𝑆𝑡) > 𝜈2(𝑆𝑡) and 𝑎𝑡=1 otherwise.
+
+   <div style="text-align: center;">
+      <img src="screenshots/action_policy.png" alt="Action Policy" width="90%" />
+   </div>
 ### Conclusion
 
 The data-driven approach using neural networks provides good approximations to the optimal functions and action policies, showing that the use of functions [A1] and [C1] successfully estimates the conditional expectations in this reinforcement learning problem.
