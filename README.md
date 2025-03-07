@@ -132,11 +132,12 @@ This graph shows the comparison between the numerical solutions and the neural n
 
 #### 6. Optimal Action Policy
 
-Finally, the optimal action policy based on the values of 𝜈1(𝑆) and 𝜈2(𝑆) is shown below.  The policy chooses 𝑎𝑡=1 if 𝜈1(𝑆𝑡) > 𝜈2(𝑆𝑡) and 𝑎𝑡=1 otherwise.
+Finally, the optimal action policy based on the values of 𝜈1(𝑆) and 𝜈2(𝑆) is shown below.  The policy chooses 𝑎𝑡=1 if 𝜈1(𝑆𝑡) > 𝜈2(𝑆𝑡) and 𝑎𝑡=2 otherwise.
 
    <div style="text-align: center;">
       <img src="screenshots/action_policy.png" alt="Action Policy" width="90%" />
    </div>
+   
 ### Conclusion
 
 The data-driven approach using neural networks provides good approximations to the optimal functions and action policies, showing that the use of functions [A1] and [C1] successfully estimates the conditional expectations in this reinforcement learning problem.
