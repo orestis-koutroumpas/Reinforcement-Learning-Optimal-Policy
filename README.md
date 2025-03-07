@@ -51,7 +51,7 @@ The data-driven approach uses neural networks to approximate 𝑢(𝑋,𝜃𝜊�
 
 where 𝑢(𝑋𝑖𝑗,𝜃𝑗) is the neural network approximation.
 
-The optimization algorithm used is Gradient Descent
+The optimization algorithm used is Gradient Descent.
 
 ### Conditional Expectation Functions
 
@@ -71,7 +71,7 @@ For the data-driven approach, we apply the function families [A1] and [C1]:
 
 ### Comparison and Results
 
-After generating 1000 random actions with a 50% chance for each action 𝑎𝑡=1 or 𝑎𝑡=2, the states {𝑆1,…,𝑆1001} are created. These sets are used to train the neural networks for approximating 𝜈1(𝑋) and 𝜈2(𝑋) using the respective data sets.
+After generating 1000 random actions with a 50% chance for each action 𝑎𝑡=1 or 𝑎𝑡=2, the states {𝑆_1,…,𝑆_1001} are created. These sets are used to train the neural networks for approximating 𝜈1(𝑋) and 𝜈2(𝑋) using the respective data sets.
 
 The neural networks used are of a single hidden layer with 100 neurons and ReLU activation functions. The Gradient Descent learning rate is set to 0.001.
 
@@ -80,7 +80,7 @@ The results demonstrate that the neural network approximations converge well to 
 ### Results
 
 #### 1. Reward Function
-The reward function used in the problem is 𝑅(𝒮)=𝑚𝑖𝑛{2,𝒮^2}. Below is a visualization of the reward function across the state space.
+The reward function used in the problem is 𝑅(𝒮) = 𝑚𝑖𝑛{2,𝒮^2}. Below is a visualization of the reward function across the state space.
 
    <div style="text-align: center;">
       <img src="screenshots/reward.png" alt="Reward" width="90%" />
@@ -88,7 +88,7 @@ The reward function used in the problem is 𝑅(𝒮)=𝑚𝑖𝑛{2,𝒮^2}. Be
 
 #### 2. Learning curve of 𝑢(𝑋,𝜃1) using [A1] and [C1]
 
-The following plots shows the learning curve for 𝜈1(𝑆), computed using the numerical method and the data-driven approach with [A1] and [C1].
+The following plots shows the learning curve for 𝜈1(𝑆) with [A1] and [C1].
 
    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
       <img src="screenshots/curve1_A1.png" alt="Learning Curve A1" width="45%" />
