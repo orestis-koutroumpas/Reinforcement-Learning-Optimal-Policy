@@ -47,13 +47,11 @@ The matrices ℱ𝑗, for j = 1, 2 are calculated based on the difference in tra
 
 The data-driven approach uses neural networks to approximate 𝑢(𝑋,𝜃𝜊𝑗). The networks are trained to approximate the expected rewards for each state. The cost function for the neural network is:
 
-𝐽̂(𝜃𝑗)=(1/𝑛𝑗) Σ{𝜑(𝑢(𝑋𝑖𝑗,𝜃𝑗))+ℛ(𝑌𝑖𝑗)𝜓(𝑢(𝑋𝑖𝑗,𝜃𝑗))}
+𝐽̂(𝜃𝑗) = (1/𝑛𝑗) Σ{ 𝜑(𝑢(𝑋𝑖𝑗,𝜃𝑗)) + ℛ(𝑌𝑖𝑗) 𝜓(𝑢(𝑋𝑖𝑗,𝜃𝑗)) }
 
 where 𝑢(𝑋𝑖𝑗,𝜃𝑗) is the neural network approximation.
 
-The optimization algorithm used is Gradient Descent:
-
-𝜃𝑡𝑗=𝜃𝑡−1𝑗−𝜇Σ[ℛ(𝑌𝑖𝑗)−𝜔(𝑢(𝑋𝑖𝑗,𝜃𝑡−1𝑗))]𝑛𝑗𝑖=1𝜌(𝑢(𝑋𝑖𝑗,𝜃𝑡−1𝑗))∇𝜃𝑢(𝑋𝑖𝑗,𝜃𝑡−1𝑗)
+The optimization algorithm used is Gradient Descent
 
 ### Conditional Expectation Functions
 
