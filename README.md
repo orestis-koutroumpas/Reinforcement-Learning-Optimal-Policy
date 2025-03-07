@@ -5,11 +5,11 @@ This repository implements the numerical and data-driven approaches to solve the
 
 ## Problem Overview
 
-The problem involves a Markov decision process with two possible transition densities depending on the action 𝑎
+The problem involves a Markov decision process with two possible transition densities depending on the action 𝑎:
 
-1. For 𝑎𝑡=1: 𝒮𝑡+1=0.8𝒮𝑡+1.0+𝑊𝑡
+- For 𝑎𝑡=1: 𝒮𝑡+1=0.8𝒮𝑡+1.0+𝑊𝑡
 
-2. For 𝑎𝑡=2: 𝒮𝑡+1=−2.0+𝑊𝑡
+- For 𝑎𝑡=2: 𝒮𝑡+1=−2.0+𝑊𝑡
    
 Where 𝑊𝑡∼𝑁(0,1).
 
