@@ -21,9 +21,9 @@ The problem is defined as:
 
 The optimal action policy is:
 
-𝑎𝑡=𝑎𝑟𝑔𝑚𝑎𝑥 {𝜈1(𝑆𝑡),𝜈2(𝑆𝑡)}
+𝑎𝑡 = 𝑎𝑟𝑔𝑚𝑎𝑥 { 𝜈1(𝑆𝑡), 𝜈2(𝑆𝑡) }
 
-That is, at time 𝑡, choose 𝑎𝑡=1 if 𝜈1(𝑆𝑡)>𝜈2(𝑆𝑡), otherwise choose 𝑎𝑡=2.
+That is, at time 𝑡, choose 𝑎𝑡=1 if 𝜈1(𝑆𝑡) > 𝜈2(𝑆𝑡), otherwise choose 𝑎𝑡=2.
 
 ## Methodology
 
